@@ -24,8 +24,8 @@ void setup() {
   lcd.begin(16, 2);
 
   clock.begin();
-  clock.fillByHMS(3, 42, 00); 
-  clock.setTime();//write time to the RTC chip
+  clock.fillByHMS(3, 42, 00); //This line manually sets the current time on the RTC
+  clock.setTime();            //write time to the RTC chip
 }
 
 void loop() {
