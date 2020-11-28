@@ -35,6 +35,8 @@ void loop() {
   lcd.print(clock.hour, DEC);
   lcd.print(":");
   lcd.print(clock.minute, DEC);
+  lcd.print(":");
+  lcd.print(clock.second, DEC);
   
   if(digitalRead(button) == LOW && count%2 == 1) {
     analogWrite(ENABLE,128);
